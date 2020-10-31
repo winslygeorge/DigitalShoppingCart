@@ -1,0 +1,4 @@
+include ':lib'
+include ':DigitalUrlManager'
+include ':app'
+rootProject.name = "DigitalShoppingCart"

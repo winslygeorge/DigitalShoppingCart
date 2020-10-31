@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="city_list">
+        <item >Nairobi</item>
+        <item>Kisumu</item>
+        <item>Mombasa</item>
+        <item>Kericho</item>
+        <item>Kapsabet</item>
+        <item>Eldoret</item>
+        <item>Garisa</item>
+        <item>Kilifi</item>
+        <item>Siaya</item>
+        <item>Bondo</item>
+    </string-array>
+</resources>

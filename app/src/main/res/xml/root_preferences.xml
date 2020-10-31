@@ -1,0 +1,40 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:visibility="visible"
+        app:icon="@android:drawable/ic_menu_myplaces"
+        app:title="Profile">
+
+        <EditTextPreference
+            android:key="usernameprefkey"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Username"
+            app:icon="@android:drawable/ic_menu_edit" />
+        <EditTextPreference
+            android:key="email_pref_key"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Email"
+            app:icon="@android:drawable/ic_dialog_email" />
+
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:icon="@android:drawable/ic_menu_manage"
+        android:title="System Settings">
+        <ListPreference
+            android:defaultValue="true"
+            android:entries="@android:array/imProtocols"
+            android:key="socialprefkey"
+            android:title="Social  Media"
+            app:icon="@android:drawable/sym_action_chat" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:icon="@android:drawable/ic_input_delete"
+            android:key="logoutpref"
+            android:title="Logout"
+            app:icon="@android:drawable/ic_input_delete" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

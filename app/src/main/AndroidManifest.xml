@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.deepdiver.digitalshoppingcart">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/images__17_"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/images__17_"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DigitalShoppingCart">
+        <activity android:name=".RegisterActivity"></activity>
+
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings" />
+        <activity android:name=".SplashScreenLauncher">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".PayMentProcess" />
+        <activity android:name=".BarScanner" />
+        <activity
+            android:name=".BarCodeScanner"
+            android:label="@string/title_activity_bar_code_scanner" />
+        <activity android:name=".ui.DisplayDetailProduct" />
+        <activity android:name=".AddProduct" />
+        <activity
+            android:name=".Admin"
+            android:label="@string/title_activity_admin"
+            android:theme="@style/Theme.DigitalShoppingCart.NoActionBar" />
+        <activity
+            android:name=".Product_List"
+            android:label="@string/title_activity_product__list"
+            android:theme="@style/Theme.DigitalShoppingCart.NoActionBar" />
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:label="@string/app_name" />
+
+        <meta-data
+            android:name="com.google.android.gms.vision"
+            android:value="barcode" />
+    </application>
+
+</manifest>
